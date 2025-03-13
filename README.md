@@ -1,2 +1,2 @@
-# AI Engineer - Porfolio!
-Hi Guys, I'm Naveen Kumar S
+# Data sciece trainee - Porfolio!
+Hi Guys, I'm Dinesh Kumar S
