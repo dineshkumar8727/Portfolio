@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="My Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Dinesh kumar - Data science trainee</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+
+    <!-- ONLY NEW STYLE: make project cards flex boxes so footer pins to bottom -->
+    <style>
+      .project-card {
+        display: flex;
+        flex-direction: column;
+      }
+      .project__description {
+        flex: 1;
+      }
+      .project__stack {
+        margin-top: auto;
+      }
+    </style>
+  </head>
+  
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="#top" class="link">DK.</a>
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#experience">Experience</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <img src="dk.jpg" alt="Dinesh Kumar" class="profile-img" />
+        <h1>Hi, I am <span class="about__name">Dinesh Kumar</span></h1>
+        <h2 class="about__role"><span id="typing-text"></span></h2>
+        <p class="about__desc">
+          -- Software Developer (Data Mining) at FactEntry; M.Tech Data Science at Vellore Institute of Technology<br>
+          -- Built AI-driven pipelines to extract structured data from financial PDFs (bonds, ABS, muni)<br>
+          -- Developed RAG + Agentic AI (LangGraph, ReAct) workflows for automated document understanding<br>
+          -- Implemented ISIN-based batch processing with scalable, production-ready architecture<br>
+          -- Improved OCR, multilingual parsing, and noisy document handling<br>
+          -- Used LLMs (Groq/Mixtral), FAISS, GPU embeddings for fast and accurate retrieval<br>
+          -- Optimized LLM cost, latency, and accuracy via chunking and semantic search
+        </p>
+
+        <div class="about__contact center">
+          <a href="Dinesh_Rsume_2026_apr.pdf" target="_blank" rel="noopener noreferrer">
+            <span class="btn btn--outline">My Resume</span>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/dinesh-kumar-s-00036b280/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+
+          <a
+            href="https://github.com/dineshkumar8727"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="github"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Experience -->
+      <section id="experience" class="section">
+        <h2 class="section__title">Work Experience</h2>
+
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <h3 class="timeline-title">Associate Software Developer - FactEntry (A SIX Company)</h3>
+            <span class="timeline-date"><strong>June-04 - Present</strong></span>
+            <p>
+              Associate Software Developer at FactEntry with experience in AI-driven data mining, financial document processing, and LLM-based automation.
+              Skilled in Python, SQL, RAG pipelines, Large Language Models (LLMs), OCR, and semantic search using FAISS and SentenceTransformers.
+              Hands-on experience in agentic AI (LangGraph, ReAct), GPU-accelerated pipelines, and scalable data extraction systems for bond/ABS datasets.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <h3 class="timeline-title">Data Science and MLOPS - FactEntry (A SIX Company)</h3>
+            <span class="timeline-date"><strong>November 2024 - May 2025</strong></span>
+            <p>
+              I have completed text extraction using keywords and language detection and am currently working on document clustering. As part of my internship, I am also focusing on feature extraction models such as ResNet, VGG, and others, along with exploring LLMs, RAG, OCR, and Ollama for advanced document processing.
+            </p>
+            <a href="https://drive.google.com/file/d/1B4Zr6y6X7xPAzhpOCxX1TfzZlUorkn5f/view?usp=sharing"
+               target="_blank"
+               class="certificate-link">
+              View Certificate
+            </a>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="section">
+        <h2 class="section__title">Education</h2>
+        <div class="education__grid">
+          <div class="education-card">
+            <h3><strong>INTEGRATED MTECH CSE WITH SPECIALIZATION IN DATA SCIENCE</strong></h3>
+            <p>Vellore Institute of Technology</p>
+            <p><strong>(2025)</strong></p>
+          </div>
+
+          <div class="education-card">
+            <h3><strong>HIGHER SECONDARY EDUCATION</strong></h3>
+            <p>Sunbeam CBSE School</p>
+            <p><strong>(2020)</strong></p>
+          </div>
+
+          <div class="education-card">
+            <h3><strong>SENIOR SECONDARY EDUCATION</strong></h3>
+            <p>Sunbeam CBSE School</p>
+            <p><strong>(2018)</strong></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== -->
+      <!--   PROJECTS (FIXED)    -->
+      <!-- ===================== -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+
+          <!-- 1 -->
+          <div class="project-card">
+            <h3>FATIGUE DETECTION SYSTEM</h3>
+            <p class="project__description">
+              The system is built to alert the user from drowsiness with alarm.
+              The model is built using transfer learning techniques with the accuracy of 96.4%.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item"><strong>CNN</strong></li>
+              <li class="project__stack-item"><strong>Transfer learning</strong></li>
+              <li class="project__stack-item"><strong>Computer Vision</strong></li>
+            </ul>
+            <a href="https://github.com/dineshkumar8727/Fatigue-Detection-System" aria-label="source code" class="link link--icon">
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+
+          <!-- 2 -->
+          <div class="project-card">
+            <h3>AI-Powered Financial Document Extraction Agent</h3>
+            <p class="project__description">
+              Built an Agentic AI system to automatically extract structured data from complex financial documents
+              including bonds, ABS, and municipal reports using ISIN-based batch processing.
+              Designed a Retrieval-Augmented Generation (RAG) pipeline with semantic search and GPU-accelerated
+              embeddings to accurately identify and extract key financial tables.
+              Implemented ReAct-based intelligent agents using LangGraph to dynamically analyze documents,
+              validate outputs, and generate deterministic JSON results for downstream systems.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item"><strong>Agentic AI (LangGraph, ReAct)</strong></li>
+              <li class="project__stack-item"><strong>LLMs (Groq - Mixtral)</strong></li>
+              <li class="project__stack-item"><strong>RAG Pipeline (FAISS, Semantic Search)</strong></li>
+              <li class="project__stack-item"><strong>GPU Embeddings (SentenceTransformers)</strong></li>
+              <li class="project__stack-item"><strong>Python, Jupyter, PDF Processing</strong></li>
+            </ul>
+          </div>
+
+          <!-- 3 -->
+          <div class="project-card">
+            <h3>RAG-Based Bond Rating Extraction System</h3>
+            <p class="project__description">
+              Developed a high-accuracy system to extract bond and certificate ratings from financial PDFs
+              issued by agencies like Moody's, S&amp;P, and Fitch.
+              Leveraged semantic retrieval and page-wise chunking to identify relevant sections and minimize
+              token usage, ensuring cost-efficient LLM processing.
+              Designed structured JSON outputs for seamless integration with downstream analytics and reporting systems.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item"><strong>RAG (Semantic Search, Chunking)</strong></li>
+              <li class="project__stack-item"><strong>LLMs (Groq API)</strong></li>
+              <li class="project__stack-item"><strong>FAISS (Vector Search)</strong></li>
+              <li class="project__stack-item"><strong>PDF Parsing (pdfplumber)</strong></li>
+              <li class="project__stack-item"><strong>Python, Pandas</strong></li>
+            </ul>
+          </div>
+
+          <!-- 4 -->
+          <div class="project-card">
+            <h3>Agentic AI Workflow for ISIN Batch Processing</h3>
+            <p class="project__description">
+              Built an automated pipeline to process large-scale ISIN datasets from Excel and map them to
+              corresponding financial documents for data extraction.
+              Implemented multi-agent workflows using LangGraph where agents perform document retrieval,
+              validation, and structured extraction in a coordinated manner.
+              Ensured robustness through error handling for missing or corrupt PDFs and deterministic outputs for production use.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item"><strong>Agentic AI (LangGraph)</strong></li>
+              <li class="project__stack-item"><strong>Excel Processing (Pandas)</strong></li>
+              <li class="project__stack-item"><strong>Batch Automation</strong></li>
+              <li class="project__stack-item"><strong>Error Handling Pipelines</strong></li>
+              <li class="project__stack-item"><strong>Python, Linux</strong></li>
+            </ul>
+          </div>
+
+          <!-- 5 -->
+          <div class="project-card">
+            <h3>GPU-Accelerated Document Intelligence Engine</h3>
+            <p class="project__description">
+              Engineered a high-performance document processing system leveraging GPU-based embeddings
+              to handle large-scale financial PDFs efficiently.
+              Integrated SentenceTransformers with CUDA-enabled PyTorch and FAISS GPU indexing to enable
+              fast semantic search and retrieval.
+              Optimized pipeline performance by reducing latency in embedding generation and improving
+              retrieval accuracy for complex tabular data extraction.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item"><strong>GPU Computing (CUDA, PyTorch)</strong></li>
+              <li class="project__stack-item"><strong>SentenceTransformers</strong></li>
+              <li class="project__stack-item"><strong>FAISS (GPU Index)</strong></li>
+              <li class="project__stack-item"><strong>Performance Optimization</strong></li>
+              <li class="project__stack-item"><strong>Python</strong></li>
+            </ul>
+          </div>
+
+          <!-- 6 -->
+          <div class="project-card">
+            <h3>PDF TO TEXT CONVERTER</h3>
+            <p class="project__description">
+              Implemented PDF to text conversion using OCR technology with pytesseract and pdf2image libraries.
+              Stored the extracted text data in a database for efficient retrieval and management,
+              facilitating further analysis and processing tasks.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item"><strong>Python</strong></li>
+              <li class="project__stack-item"><strong>OCR</strong></li>
+              <li class="project__stack-item"><strong>SQL</strong></li>
+            </ul>
+            <a href="https://github.com/dineshkumar8727/pdf2text" aria-label="source code" class="link link--icon">
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+
+          <!-- 7 -->
+          <div class="project-card">
+            <h3>CERTIFICATE VERIFICATION SYSTEM</h3>
+            <p class="project__description">
+              Securely adds certificates to the blockchain with unique hash codes, ensuring integrity and immutability.
+              Verifies certificates by comparing stored hashes, ensuring authenticity and preventing tampering.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item"><strong>Blockchain</strong></li>
+              <li class="project__stack-item"><strong>Meta mask</strong></li>
+            </ul>
+          </div>
+
+          <!-- 8 -->
+          <div class="project-card">
+            <h3>Smart Garbage System</h3>
+            <p class="project__description">
+              Develops a real-time smart garbage monitoring system with SMS alerts for prompt municipal
+              action, improving area cleanliness.
+              Implements blockchain technology for IoT data privacy and security, storing sensor data in
+              tamper-proof blocks.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item"><strong>Smart Garbage Monitoring</strong></li>
+              <li class="project__stack-item"><strong>Arduino</strong></li>
+              <li class="project__stack-item"><strong>UV Sensor</strong></li>
+              <li class="project__stack-item"><strong>Blynk server</strong></li>
+            </ul>
+          </div>
+
+          <!-- 9 -->
+          <div class="project-card">
+            <h3>LANGUAGE DETECTION</h3>
+            <p class="project__description">
+              This project extracts text from PDFs, detects all languages present, and identifies the dominant one.
+              It uses PyMuPDF, Tesseract OCR, and langdetect, handling both scanned and text-based PDFs.
+              With parallel processing, it efficiently processes large datasets and saves results in Excel.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item"><strong>Tesseract (pytesseract)</strong></li>
+              <li class="project__stack-item"><strong>Pandas</strong></li>
+              <li class="project__stack-item"><strong>PyMuPDF (fitz)</strong></li>
+              <li class="project__stack-item"><strong>LangDetect</strong></li>
+              <li class="project__stack-item"><strong>Multiprocessing</strong></li>
+            </ul>
+            <a href="https://github.com/dineshkumar8727/Language_detection.git" aria-label="source code" class="link link--icon">
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+
+          <!-- 10 -->
+          <div class="project-card">
+            <h3>SMART-EDGE BASED DRIVER DROWSINESS DETECTION</h3>
+            <p class="project__description">
+              This real-time Driver Drowsiness Detection system uses computer vision to monitor eye and mouth movements for fatigue signs.
+              It calculates EAR and MAR, triggers alerts, and logs real-time webcam data.
+              The system visualizes trends using Matplotlib and stores data for further analysis.
+              Built with Python, OpenCV, dlib, and Matplotlib, it ensures accurate, real-time monitoring and visualization of drowsiness detection.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item"><strong>Python</strong></li>
+              <li class="project__stack-item"><strong>OpenCV</strong></li>
+              <li class="project__stack-item"><strong>dlib</strong></li>
+              <li class="project__stack-item"><strong>Matplotlib</strong></li>
+              <li class="project__stack-item"><strong>imutil</strong></li>
+            </ul>
+            <a href="https://github.com/dineshkumar8727/Driver_Drowsiness_detection" aria-label="source code" class="link link--icon">
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+          </div>
+
+        </div>
+      </section>
+      <!-- END PROJECTS -->
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">Generative AI</li>
+          <li class="skills__list-item btn btn--plain">RAG</li>
+          <li class="skills__list-item btn btn--plain">AI Agents</li>
+          <li class="skills__list-item btn btn--plain">Agentic RAG / Agentic AI</li>
+          <li class="skills__list-item btn btn--plain">NLP</li>
+          <li class="skills__list-item btn btn--plain">Pytorch</li>
+          <li class="skills__list-item btn btn--plain">tensorflow</li>
+          <li class="skills__list-item btn btn--plain">Data extraction</li>
+          <li class="skills__list-item btn btn--plain">Computer Vision</li>
+          <li class="skills__list-item btn btn--plain">Linux</li>
+          <li class="skills__list-item btn btn--plain">Git / GitHub / GitLab</li>
+          <li class="skills__list-item btn btn--plain">Streamlit</li>
+          <li class="skills__list-item btn btn--plain">EDA</li>
+          <li class="skills__list-item btn btn--plain">PowerBi</li>
+          <li class="skills__list-item btn btn--plain">GenAI (LLMs)</li>
+          <li class="skills__list-item btn btn--plain">Agentic AI (LangGraph, ReAct)</li>
+          <li class="skills__list-item btn btn--plain">RAG (Retrieval-Augmented Generation)</li>
+          <li class="skills__list-item btn btn--plain">Semantic Search</li>
+          <li class="skills__list-item btn btn--plain">FAISS (Vector DB)</li>
+          <li class="skills__list-item btn btn--plain">SentenceTransformers</li>
+          <li class="skills__list-item btn btn--plain">OCR & Document Processing</li>
+          <li class="skills__list-item btn btn--plain">PDF Parsing (pdfplumber)</li>
+          <li class="skills__list-item btn btn--plain">LLMs (Groq / Mixtral)</li>
+          <li class="skills__list-item btn btn--plain">GPU Computing (CUDA, PyTorch)</li>
+          <li class="skills__list-item btn btn--plain">Batch Processing Pipelines</li>
+          <li class="skills__list-item btn btn--plain">Financial Data Extraction</li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:dineshsuresh2903@gmail.com">
+          <span class="btn btn--outline">Email Me!</span>
+        </a>
+        <p class="contact__info">
+          <i class="fas fa-phone-alt"></i>
+          <a href="tel:+917708765012">+917708765012</a>
+        </p>
+        <p class="contact__info">
+          <i class="fab fa-whatsapp"></i>
+          <a href="https://wa.me/917708765012" target="_blank" rel="noopener noreferrer">
+            Chat on WhatsApp
+          </a>
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="https://github.com/dineshkumar8727" class="link footer__link">
+        Created By Dinesh kumar ❤️
+      </a> <br>
+      <p class="footer__copyright" id="copyright"></p>
+    </footer>
+
+    <div class="scroll-container">
+      <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+          <i aria-hidden="true" class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
