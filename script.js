@@ -128,8 +128,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Typewriter Animation
   const roles = [
-    "Data Science Trainee 🧠",
-    "Machine Learning Engineer 🚀",
+    "Software Developer 🚀",
     "GenAI Developer ✨",
     "Agentic AI Engineer 🤖"
   ];
