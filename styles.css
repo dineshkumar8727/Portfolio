@@ -111,15 +111,48 @@
   
 .about__contact {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
+  flex-wrap: wrap;
   gap: 18px;
+  width: 100%;
+  margin-top: 2.4em;
+}
+
+.about__contact > a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+
+.about__contact .btn--outline {
+  display: inline-block;
+  margin: 0;
+  white-space: nowrap;
 }
 
 .about__contact .link--icon {
-  font-size: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--clr-primary);
+  font-size: 1.6rem;
+  line-height: 1;
+  padding: 0;
   margin: 0;
+  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.about__contact .link--icon:hover,
+.about__contact .link--icon:focus {
+  color: var(--clr-primary);
+  transform: translateY(-3px);
+}
+
+.about__contact .link--icon::before {
+  display: none;
 }
 
   
@@ -769,6 +802,22 @@
   
     .about__desc {
       font-size: 0.9rem;
+      width: 95%;
+      text-align: left;
+    }
+
+    .about__contact {
+      gap: 14px;
+      margin-top: 1.8em;
+    }
+
+    .about__contact .btn--outline {
+      padding: 0.7em 1.1em;
+      font-size: 0.85rem;
+    }
+
+    .about__contact .link--icon {
+      font-size: 1.45rem;
     }
   }
 
