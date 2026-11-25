@@ -216,23 +216,32 @@
           </div>
 
 
-          <div class="project-card">
-            <h3>RAG-Based Bond Rating Extraction System</h3>
-            <p class="project__description">
-              Developed a high-accuracy system to extract bond and certificate ratings from financial PDFs
-              issued by agencies like Moody's, S&amp;P, and Fitch.
-              Leveraged semantic retrieval and page-wise chunking to identify relevant sections and minimize
-              token usage, ensuring cost-efficient LLM processing.
-              Designed structured JSON outputs for seamless integration with downstream analytics and reporting systems.
-            </p>
-            <ul class="project__stack">
-              <li class="project__stack-item"><strong>RAG (Semantic Search, Chunking)</strong></li>
-              <li class="project__stack-item"><strong>LLMs (Groq API)</strong></li>
-              <li class="project__stack-item"><strong>FAISS (Vector Search)</strong></li>
-              <li class="project__stack-item"><strong>PDF Parsing (pdfplumber)</strong></li>
-              <li class="project__stack-item"><strong>Python, Pandas</strong></li>
-            </ul>
-          </div>
+
+<div class="project-card">
+  <h3>RAG-Based Financial Document Field Extraction</h3>
+  <p class="project__description">
+    Developed a Retrieval-Augmented Generation (RAG) pipeline to extract
+    structured financial fields from complex bond and financial documents
+    using ISIN-based processing. Implemented line-aware document chunking
+    with overlapping context and source references to preserve financial
+    information and improve retrieval accuracy. Built a Hybrid RAG system
+    combining dense vector search, BM25 lexical retrieval, and field-specific
+    keyword matching. Integrated Reciprocal Rank Fusion (RRF) to combine
+    retrieval results and cross-encoder reranking to select the most relevant
+    document chunks for each extraction field. Leveraged Gemini for
+    context-grounded extraction with structured JSON outputs, source
+    traceability, validation, and missing-field retry mechanisms.
+  </p>
+  <ul class="project__stack">
+    <li class="project__stack-item"><strong>Hybrid RAG</strong></li>
+    <li class="project__stack-item"><strong>Document Chunking</strong></li>
+    <li class="project__stack-item"><strong>BM25 &amp; Vector Search</strong></li>
+    <li class="project__stack-item"><strong>RRF &amp; Cross-Encoder Reranking</strong></li>
+    <li class="project__stack-item"><strong>LlamaIndex, LangGraph</strong></li>
+    <li class="project__stack-item"><strong>Gemini, Python</strong></li>
+  </ul>
+</div>
+
 
 
           <!-- 4 -->
@@ -257,7 +266,11 @@
     <li class="project__stack-item"><strong>Gemini, LangGraph</strong></li>
     <li class="project__stack-item"><strong>LlamaIndex, Python</strong></li>
     <li class="project__stack-item"><strong>Financial NLP</strong></li>
-  </ul>
+      </ul>
+     <a href="https://github.com/dineshkumar8727/Chatbot-in-fixed-income" aria-label="source code" class="link link--icon">
+     <i aria-hidden="true" class="fab fa-github"></i>
+     </a>
+
 </div>
 
 
